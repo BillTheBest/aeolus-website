@@ -140,19 +140,43 @@ filter: haml
   %h2(id="newfeaturesummary") New features
 
   %ul
-    %li
+    %li(id="newfeature-multipush")
       %b Aeolus-cli can now push to multiple providers simultaneously
       %br
       %i(style="color:magenta") proper description goes here
       %br
       %br
 
-    %li
-      %b Aeolus-cli error messaging <span style="color: magenta">&lArr; needs a more verbose title</span>
+    %li(id="newfeature-condapimsgs")
+      %b The Conductor API now communicates error messages clearly
       %br
-      %i(style="color:magenta") proper description goes here
+      Clients now receive an error code, with a brief message to aid in
+      resolving the problem.
       %br
       %br
+      This allows clients to customize error information
+      for their users.
+      %br
+      %br
+      More information on the Conductor API, with the full listing of error
+      codes, is available here:
+      %br
+      %br
+      &nbsp;&nbsp;&nbsp;
+      %a{ :href => "https://www.aeolusproject.org/redmine/projects/aeolus/wiki/Conductor_API",
+          :title => "Conductor API documentation" }
+        https://www.aeolusproject.org/redmine/projects/aeolus/wiki/Conductor_API
+
+      %br
+      %br
+
+    %li(id="newfeature-aclimsgs")
+      %b Aeolus-cli now has human friendly error messages
+      %br
+      Error handling in aeolus-cli has been updated for the new Conductor API.
+      //%br
+      This means error messages from aeolus-cli are now useful and more
+      helpful.  
 
 %br
 
