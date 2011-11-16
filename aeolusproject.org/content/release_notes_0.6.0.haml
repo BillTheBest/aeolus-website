@@ -101,9 +101,9 @@ filter: haml
                 Bugs
 
     %li
-      %a{ :href => "#issuesresolvedbz",
-          :title => "Issues resolved (Bugzilla issue list)" }
-        Issues resolved (Bugzilla issue list)
+      %a{ :href => "#issuesclosedbz",
+          :title => "Issues closed (Bugzilla issue list)" }
+        Issues closed (Bugzilla issue list)
 
 .section-grouping
   This is a
@@ -173,10 +173,8 @@ filter: haml
     %li(id="newfeature-aclimsgs")
       %b Aeolus-cli now has human friendly error messages
       %br
-      Error handling in aeolus-cli has been updated for the new Conductor API.
-      //%br
-      This means error messages from aeolus-cli are now useful and more
-      helpful.  
+      Error handling in aeolus-cli has been updated for the new Conductor API,
+      making them simple to read, and helpful.
 
 %br
 
@@ -811,7 +809,7 @@ filter: haml
 %br
 
 .section-grouping
-  %h2(id="issuesresolvedbz") Issues resolved (Bugzilla issue list)  <span style="color: magenta">(items from "Known Issues" list will be moved here)</span>
+  %h2(id="issuesclosedbz") Issues closed (Bugzilla issue list)  <span style="color: magenta">(items from "Known Issues" list will be moved here)</span>
 
   %ul
     %li
